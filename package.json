@@ -2,7 +2,6 @@
   "name": "rss2rss",
   "version": "1.0.0",
   "description": "server which hosts a filtered version of existing rss feeds",
-  "main": "rss2rss.js",
   "scripts": {
     "start": "node ./bin/rss2rss",
     "lint": "eslint ./",
