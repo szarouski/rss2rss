@@ -1,2 +1,23 @@
 #!/usr/bin/env node
+const newrelic = require('newrelic');
+
+process.on('uncaughtException', (er) => {
+	try {
+		console.error(er.stack);
+		newrelic.noticeError(er);
+		newrelic.shutdown({ collectPendingData: true }, () => {
+			process.exit(1);
+		});
+		const shutdownTimeoutInSeconds = 10;
+		// eslint-disable-next-line prefer-arrow-callback
+		setTimeout(function newRelicDidNotExit() {
+			console.error(`newrelic.shutdown callback wasn't called in ${shutdownTimeoutInSeconds}s, exiting`);
+			process.exit(1);
+		}, 1000 * shutdownTimeoutInSeconds);
+	} catch (ex) {
+		console.error('uncaughtException or newrelic.shutdown error');
+		console.error(ex.stack);
+		process.exit(1);
+	}
+});
 require('../lib/app.js');
