@@ -1,5 +1,5 @@
 module.exports = {
-	port: 80,
+	port: process.env.PORT || 80,
 	base: '',
 	feeds: [{
 		url: 'habr',
