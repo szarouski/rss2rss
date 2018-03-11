@@ -6,6 +6,7 @@
 	"rules": {
 		"indent": ["error", "tab"],
 		"no-tabs": "off",
+		"linebreak-style": "off",
 		"comma-dangle": "off",
 		"one-var": "off",
 		"consistent-return": "off",
