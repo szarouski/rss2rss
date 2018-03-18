@@ -1,15 +1,22 @@
 {
 	"env": {
-		"node": true
+		"node": true,
+		"jest": true
 	},
 	"extends": "eslint-config-airbnb-base",
 	"rules": {
-		"indent": ["error", "tab"],
-		"no-tabs": "off",
-		"linebreak-style": "off",
 		"comma-dangle": "off",
-		"one-var": "off",
 		"consistent-return": "off",
-		"no-plusplus": "off"
+		"eol-last": "off",
+		"indent": ["error", "tab"],
+		"linebreak-style": "off",
+		"no-plusplus": "off",
+		"no-tabs": "off",
+		"no-trailing-spaces": "off",
+		"no-use-before-define": ["error", {"functions": false, "classes": false}],
+		"object-curly-spacing":"off",
+		"one-var": "off",
+		"quotes": "off",
+		"spaced-comment": "off"
 	}
 }
