@@ -12,6 +12,9 @@ module.exports = {
 			regex: /Дайджест свежих материалов из мира фронтенда за последнюю неделю/ig,
 		}, {
 			key: 'title',
+			regex: /Полезное дизайнеру/ig,
+		}, {
+			key: 'title',
 			regex: /\bVirtualBox\b/ig,
 		}, {
 			key: 'title',
@@ -19,6 +22,9 @@ module.exports = {
 		}, {
 			key: 'title',
 			regex: /ASP.NET/ig,
+		}, {
+			key: 'title',
+			regex: /\bphp\b/ig,
 		}, {
 			key: 'title',
 			regex: /\bbootstrap\b/ig,
