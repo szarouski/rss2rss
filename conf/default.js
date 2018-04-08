@@ -31,6 +31,9 @@ module.exports = {
 		}, {
 			key: 'title',
 			regex: /\bvue\b/ig,
+		}, {
+			key: 'title',
+			regex: /Разработка изоморфного RealWorld приложения с SSR и Progressive Enhancement/ig,
 		}]
 	}, {
 		url: 'npm',
