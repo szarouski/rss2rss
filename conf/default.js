@@ -38,6 +38,9 @@ module.exports = {
 					regex: /\bjava\b/ig,
 				}, {
 					key: 'title',
+					regex: /\bjoomla\b/ig,
+				}, {
+					key: 'title',
 					regex: /\bpolymer\b/ig,
 				}, {
 					key: 'title',
