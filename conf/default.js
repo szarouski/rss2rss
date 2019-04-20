@@ -4,6 +4,9 @@ const habrFilters = [
 		regex: /\bangular\b/ig,
 	}, {
 		key: 'title',
+		regex: /\bангуляр\b/ig,
+	}, {
+		key: 'title',
 		regex: /Дайджест свежих материалов из мира фронтенда за последнюю неделю/ig,
 	}, {
 		key: 'title',
