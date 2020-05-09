@@ -1,5 +1,10 @@
 const habrFilters = [
 	{
+		key: 'category',
+		regex: /\b(css|Accessibility|WebAssembly|JavaScript|Google Chrome|HTML|Node.JS|ReactJS|Kubernetes|Docker|Браузеры|Совершенный код|Разработка веб-сайтов)\b/i,
+		include: true,
+	},
+	{
 		key: 'title',
 		regex: /\bangular\b/ig,
 	}, {
@@ -64,56 +69,17 @@ module.exports = {
 	base: '',
 	feeds: [
 		{
-			url: 'habr-css',
-			source: 'https://habr.com/ru/rss/hub/css/top/weekly/?fl=ru',
+			url: 'habr-best-weekly',
+			source: 'https://habr.com/ru/rss/best/weekly/?fl=ru&limit=100',
+			filters: habrFilters
+		},
+		{
+			url: 'habr-best-daily',
+			source: 'https://habr.com/ru/rss/best/daily/?fl=ru&limit=100',
 			filters: habrFilters
 		}, {
-			url: 'habr-webdev',
-			source: 'https://habr.com/ru/rss/hub/webdev/top/weekly/?fl=ru',
-			filters: habrFilters
-		}, {
-			url: 'habr-chrome',
-			source: 'https://habr.com/ru/rss/hub/google_chrome/top/weekly/?fl=ru',
-			filters: habrFilters
-		}, {
-			url: 'habr-html',
-			source: 'https://habr.com/ru/rss/hub/html5/top/weekly/?fl=ru',
-			filters: habrFilters
-		}, {
-			url: 'habr-js',
-			source: 'https://habr.com/ru/rss/hub/javascript/top/weekly/?fl=ru',
-			filters: habrFilters
-		}, {
-			url: 'habr-k8s',
-			source: 'https://habr.com/ru/rss/hub/kubernetes/top/weekly/?fl=ru',
-			filters: habrFilters
-		}, {
-			url: 'habr-node',
-			source: 'https://habr.com/ru/rss/hub/nodejs/top/weekly/?fl=ru',
-			filters: habrFilters
-		}, {
-			url: 'habr-reactjs',
-			source: 'https://habr.com/ru/rss/hub/reactjs/top/weekly/?fl=ru',
-			filters: habrFilters
-		}, {
-			url: 'habr-safari',
-			source: 'https://habr.com/ru/rss/hub/safari/top/weekly/?fl=ru',
-			filters: habrFilters
-		}, {
-			url: 'habr-wasm',
-			source: 'https://habr.com/ru/rss/hub/webassembly/top/weekly/?fl=ru',
-			filters: habrFilters
-		}, {
-			url: 'habr-browsers',
-			source: 'https://habr.com/ru/rss/hub/browsers/top/weekly/?fl=ru',
-			filters: habrFilters
-		}, {
-			url: 'habr-code',
-			source: 'https://habr.com/ru/rss/hub/complete_code/top/weekly/?fl=ru',
-			filters: habrFilters
-		}, {
-			url: 'habr-a11y',
-			source: 'https://habr.com/ru/rss/hub/accessibility/top/weekly/?fl=ru',
+			url: 'habr-all-top10',
+			source: 'https://habr.com/ru/rss/all/top10/?fl=ru',
 			filters: habrFilters
 		}, {
 			url: 'npm',
