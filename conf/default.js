@@ -6,10 +6,11 @@ const habrFilters = [
 	},
 	{
 		key: 'title',
-		regex: /\bangular\b/ig,
-	}, {
+		regex: /\bdjango\b/ig,
+	},
+	{
 		key: 'title',
-		regex: /\bангуляр\b/ig,
+		regex: /\b(angular|ангуляр)\b/ig,
 	}, {
 		key: 'title',
 		regex: /Дайджест свежих материалов из мира фронтенда за последнюю неделю/ig,
