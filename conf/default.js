@@ -62,6 +62,9 @@ const habrFilters = [
 	}, {
 		key: 'title',
 		regex: /Разработка изоморфного RealWorld приложения с SSR и Progressive Enhancement/ig,
+	}, 	{
+		key: 'dc:creator',
+		regex: /\bfillpackart\b/ig
 	}
 ];
 
