@@ -16,3 +16,4 @@ npm-debug.log*
 .yarn-integrity
 
 /.idea
+test.http

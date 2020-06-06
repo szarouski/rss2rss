@@ -1,7 +1,7 @@
 const habrFilters = [
 	{
 		key: 'category',
-		regex: /\b(css|Accessibility|WebAssembly|JavaScript|Google Chrome|HTML|Node.JS|ReactJS|Kubernetes|Docker|Браузеры|Совершенный код|Разработка веб-сайтов)\b/i,
+		regex: /(\b(css|Accessibility|WebAssembly|JavaScript|Google Chrome|HTML|Node.JS|ReactJS|Kubernetes|Docker|Браузеры|Совершенный код|Разработка веб-сайтов|Microsoft Azure)\b|^(api|C#|firefox)$)/i,
 		include: true,
 	},
 	{
