@@ -34,7 +34,7 @@ const habrFilters = [
 		regex: /\bbootstrap\b/ig,
 	}, {
 		key: 'title',
-		regex: /\bvue\b/ig,
+		regex: /\b(vue|nuxt)\b/ig,
 	}, {
 		key: 'title',
 		regex: /\bjava\b/ig,
