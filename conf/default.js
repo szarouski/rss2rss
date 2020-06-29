@@ -65,6 +65,9 @@ const habrFilters = [
 	}, 	{
 		key: 'dc:creator',
 		regex: /\bfillpackart\b/ig
+	}, {
+		key: 'dc:creator',
+		regex: /\bru_vds\b/ig
 	}
 ];
 
