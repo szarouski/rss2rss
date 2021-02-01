@@ -68,6 +68,22 @@ const habrFilters = [
 	}, {
 		key: 'dc:creator',
 		regex: /\bru_vds\b/ig
+	},
+	{
+		key: 'title',
+		regex: /\barduino\b/ig
+	},
+	{
+		key: 'title',
+		regex: /\bunity\b/ig
+	},
+	{
+		key: 'title',
+		regex: /\blaravel\b/ig
+	},
+	{
+		key: 'dc:creator',
+		regex: /\bpicard\b/ig
 	}
 ];
 
